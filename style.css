@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p, button{
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+body{
+    background-color: hsl(0, 0%, 95%);
+}
+
+main{
+    width: 50%;
+    margin: auto;
+    display: row;
+    justify-content: center;
+    height: 100vh;
+}
+
+h3{
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+button{
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 12px;
+    border: none;
+}
+
+button:hover{
+    background-color: transparent;
+    color: white;
+}
+
+.sedans button{
+    color: hsl(31, 77%, 52%);
+}
+
+.suvs button{
+    color: hsl(184, 100%, 22%);
+}
+
+.luxury button{
+    color: hsl(179, 100%, 13%);
+}
+
+p{
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.flex{
+    display: flex;
+    width: 100%;
+}
+
+.sedans{
+    background-color: hsl(31, 77%, 52%);
+    padding: 2em;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.suvs{
+    background-color: hsl(184, 100%, 22%);
+    padding: 2em;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.luxury{
+    background-color: hsl(179, 100%, 13%);
+    padding: 2em;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+@media screen and (max-width:375px) {
+    .flex{
+        flex-direction: column;
+    }  
+    .suvs{
+        flex-direction: column;
+    }  
+    .sedans{
+        flex-direction: column;
+    }  
+    .luxury{
+        flex-direction: column;
+    }  
+}
+
+@media screen and (max-width:1440px) {
+    .suvs{
+        flex-direction: column;
+    }  
+    .sedans{
+        flex-direction: column;
+    }  
+    .luxury{
+        flex-direction: column;
+    }  
+}
+
+nav { 
+    background-color: #861657;
+    color: fff;
+    display: flex;
+    padding: 15px;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+
+nav a { 
+    color: #fff;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+/* Change the color of links on hover */
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
